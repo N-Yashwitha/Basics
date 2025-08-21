@@ -1,0 +1,82 @@
+<html>
+    <head><title>Grid Usage</title>
+   
+    <style>
+        .container{
+            display: grid;
+            grid-template-columns: repeat(8,1f) ;
+            grid-template-rows: repeat(10,1fr);
+             gap: 2px; 
+               
+        }
+        .one{
+           
+            border: 5px;
+            padding: 10px;
+            grid-column: 1/7; 
+            grid-row: 1/2;
+             background-color: rgb(228, 160, 185);
+            text-align: center;     
+        }
+        .two{
+            grid-column: 1/2; 
+            grid-row: 2/9;
+             background-color: rgb(232, 195, 74);
+             text-align: center;
+        }
+        .three{
+            grid-column: 2/3; 
+            grid-row: 2/9;
+             background-color: rgb(234, 232, 175);
+             text-align: center;
+        }
+        .four{
+            grid-column: 3/4; 
+            grid-row: 2/3;
+             background-color: rgb(134, 193, 173);
+             text-align: center;
+        }
+        .five{
+            grid-column: 3/4; 
+            grid-row: 3/9;
+             background-color: rgb(181, 227, 148);
+             text-align: center;
+        }
+        .six
+        {
+            grid-column: 4/6; 
+            grid-row: 2/9;
+             background-color: rgb(231, 181, 223);
+             text-align: center;
+        }
+        .seven{
+            grid-column: 6/7; 
+            grid-row: 2/9;
+             background-color: rgb(222, 193, 161);
+             text-align: center;
+        }
+        .eight
+        {
+            grid-column:1 /7; 
+            grid-row: 8/9;
+             background-color: rgb(176, 180, 224);
+             text-align: center;
+        }
+       
+        
+    </style>
+    
+ </head>
+ <body>
+    <div class="container">
+        <div class="one">1</div>
+        <div class="two">2</div>
+        <div class="three">3</div>
+        <div class="four">4</div>
+        <div class="five">5</div>
+        <div class="six">6</div>
+        <div class="seven">7</div>
+        <div class="eight">8</div>
+    </div>
+ </body>
+</html>

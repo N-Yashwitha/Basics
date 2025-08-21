@@ -1,0 +1,52 @@
+#container
+{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding: 30px;
+    border: 2px solid black;
+    border-style: dashed;
+    border-color: #c8a5a5;
+    background-color: #f0f0f0;
+    border-bottom: hidden;
+    
+}
+#contain
+{
+    margin: 5px auto;
+    display: flex;
+    padding: 5px;
+}
+#sidebar
+{
+    flex: 1;
+    padding: 20px;
+}
+#main-content{
+    flex:auto;
+    padding: 20px;
+}
+
+@media screen and (max-width: 600px) {
+    #container {
+        flex-direction: row;
+    }
+    #sidebar {
+        background-color: aquamarine;
+    }
+    #main-content {
+        background-color: lightcoral;
+    }
+    
+}
+#sidebar h2 {
+    color: #586fd9;
+    font-size: 1.5em;
+}   
+
+#fruit-list {
+    list-style-type: none;
+    padding: 5; 
+    background-color: beige;
+    border: #c8a5a5 solid 1px;
+}
+    
