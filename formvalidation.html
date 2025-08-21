@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <title>Form Validation Example</title>
+    </head>
+    <body>
+        <form id="regform">
+            Name: <input type="text" id="cname">
+            <span id="nameerror" style="color:red" font-size: 10px ></span><br><br>
+            Education: <input type ="text" id="education">
+            <span id="eduerror" style="color:red" font-size: 10px></span><br><br>
+            <input type ="submit" value="Submit">
+         </form>
+         <div>
+            Your name is entered as: <span id="spanname"></span> and your education qualification is: <span id="spaneducation"></span>
+         </div>
+         <script> 
+                const form = document.getElementById("regform");
+                myform.addEventListener("submit", function(event) {
+                    event.preventDefault(); 
+                var varname = document.getElementById("cname").value;
+                var varname = document.getElementById("education").value;
+
+                document.getElementById("spanname").innerContent = cname;
+                document.getElementById("spaneducation").innerContent = education;
+            });
+         </script>
+    </body>
+</html>
